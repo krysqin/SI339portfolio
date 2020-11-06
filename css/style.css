@@ -1,0 +1,267 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: #FFFFFF;
+  font-family: 'Helvetica Neue', sans-serif; 
+  margin: 0;
+  padding: 0;
+  font-size: 14pt;  
+}
+
+h1{
+  display: grid;
+  grid-row: 1 / 1;
+  grid-column: 1 / -1;
+  font-size: 50px;
+  line-height: 1;
+  padding: 44px 0;
+  text-align: center;
+  background-color: black;
+  color: white;
+  letter-spacing: 10px;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url(../images/hero.JPG);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-header { 
+  font-size: 9vh;
+  flex-direction: column;
+  justify-content: center;
+ }
+
+
+h2{
+  display: flex;
+  font-size: 32px;
+  line-height: 1.5;
+  padding: 0 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: center;
+}
+
+p {
+  padding: 30px;
+  line-height: 1.5;
+}
+
+/* about page */
+
+p.about_p{
+  padding-bottom: 45px;
+} 
+
+/* general */
+
+nav li{
+  display:inline;
+  padding:2px 2px 2px 2px;
+}
+
+nav a{
+  color: black;
+  text-decoration: none; 
+  margin: 20px 20px 20px 20px;
+}
+
+nav a:hover, nav a:focus{
+  text-decoration: underline;
+}
+
+nav .current {
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+/* mobile */
+nav{
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  padding: 20px 0; 
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+/* desktop */
+@media screen and (min-width: 850px){
+  ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+  }
+
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+
+  position: absolute;
+  top: -40px;
+
+}
+
+.skip a:focus{
+  top: 0px;
+}
+
+.gallery{
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+
+.gallery > img{
+  width:300px;
+  height:300px;
+  padding: 10px;
+  object-fit:cover;
+}
+
+
+footer{
+  background-color: #B5D3E7;
+  color: black;
+  font-size: small;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.intro-text{
+  grid-column: 2 / span 1;
+  background-color: white;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+/* links.html */
+
+.container{
+  display: grid;
+  grid-row-gap: 15px;
+  grid-template-columns: 2fr 4fr 2fr;
+  grid-template-rows: auto auto auto;
+
+}
+
+p.descrip{
+  grid-row: 2 / span 1;
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+button {
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+div.button_links{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row: 3 / span 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-bottom: 40px;
+}
+
+.btn {
+  background-color: white; 
+  color: black; 
+  border: 2px solid black;
+  font-size: 30px;
+}
+
+.btn:hover {
+  background-color:black;
+  color: white;
+}
+
+/* portfolio page */
+
+.port_container{
+  display: grid;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: auto auto auto;
+}
+
+div.row1{
+  display: grid;
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+div.row2{
+  grid-row: 3 / span 1;
+  grid-column: 2 / span 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap; 
+  flex-grow: inherit;
+  padding-bottom: 40px;
+}
+
+.port_btn {
+  background-color: white; 
+  color: black; 
+  border: 2px solid black;
+  font-size: 40px;
+  vertical-align: middle;
+  text-align: center;
+  margin: 5px;
+  height: 200px;
+  width: 300px;
+}
+
+.port_btn:hover {
+  background-color:black;
+  color: white;
+}
