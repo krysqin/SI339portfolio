@@ -14,6 +14,14 @@ form {
   border: 3px solid #f1f1f1;
 }
 
+
+legend{ 
+  font-size: 150%;
+  font-style:bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 label{
   display: inline-block;
   margin-right:10px;
