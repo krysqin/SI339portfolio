@@ -20,7 +20,6 @@ hr {
 
 
 form {
-  /* border: 3px solid #f1f1f1; */
   width: 80%;
   margin: 0 auto;
 
@@ -228,7 +227,6 @@ div.row2{
 }
 
 
-
 /* general */
 
 nav li{
@@ -287,6 +285,15 @@ ul {
   top: 0px;
 }
 
+.intro-text{
+  grid-column: 2 / span 1;
+  background-color: white;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
 .gallery{
   min-height: 600px;
   display: flex;
@@ -297,47 +304,64 @@ ul {
 }
 
 .gallery > img{
-  width:300px;
-  height:300px;
+  width:400px;
+  height:400px;
   padding: 10px;
   object-fit:cover;
 }
 
-/* 
-.highlight-reel{
-  grid-row: 3 / span ;
-  grid-column: 2 / span 2;
+/* home page gallery */
+
+.GTKM{
+  margin-left: 30px;
+  margin-right: 30px;
+  line-height: 1.5;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4, calc(((100vw - 5rem)/4)));
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  margin: 1rem 0;
+  padding: 0 1rem;
+  padding-bottom: 7%; 
+}
+
+.item > img{
+  width: 100%;
+  height: auto;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+ 
+p.label{
+  font-size: 2.5vmin;
+  line-height: 1;
+  padding: 0 1rem; /*text alignment*/
+  margin: 0;
+  color: white;
+  background-color: black;
+  height: 3rem;
+  margin-top: -1rem;
+  text-align: center;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap; 
-  flex-grow: inherit;
-  padding-bottom: 40px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-style: italic;
+  position: relative;
 }
 
-.highlight-reel > img{
-  width: 400px;
-  height: 400px;
-  padding: 10px;
-  object-fit:cover;
-} */
-
+ 
 footer{
-  background-color: #B5D3E7;
-  color: black;
+  background-color: black;
+  color: white;
   font-size: small;
   font-weight: 500;
-  padding-top: 30px;
+  padding-top: 10px;
   text-align: center;
-}
-
-.intro-text{
-  grid-column: 2 / span 1;
-  background-color: white;
-  padding: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.5;
 }
 
 /* form */
@@ -353,9 +377,6 @@ fieldset{
   min-inline-size: min-content;
   border-width: 2px;
   border: 0;
-  /* border-style: groove; */
-  /* border-color: black; */
-  /* border-image: initial; */
 }
 
 input[type=submit] {
